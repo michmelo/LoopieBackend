@@ -1,6 +1,5 @@
 package com.example.loopie.Pedidos.model;
 
-import com.example.loopie.Users.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,11 +18,10 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPedido;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name = "user_id")
+    private int userId;
 
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "pedidoItem", cascade = CascadeType.ALL)
     private List<ItemPedido> items;
 
     private Double totalPedido;

@@ -1,34 +1,27 @@
 package com.example.loopie.Pedidos.model;
 
-import com.example.loopie.Users.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "pedidos")
-public class Pedido {
+@Table(name = "item_pedido")
+public class ItemPedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idPedido;
+    private int idItemPedido;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedidoItem;
 
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
-    private List<ItemPedido> items;
+    @Column(name = "id_producto")
+    private int idProducto;
 
-    private Double totalPedido;
-
-    private String statusPedido;
-
-    private LocalDateTime fechaPedido;
+    private int cantidad;
+    private double precioItem;
 }
