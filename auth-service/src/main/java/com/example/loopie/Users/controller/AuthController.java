@@ -3,7 +3,6 @@ package com.example.loopie.Users.controller;
 import com.example.loopie.Users.dto.AuthenticationRequest;
 import com.example.loopie.Users.dto.AuthenticationResponse;
 import com.example.loopie.Users.model.User;
-import com.example.loopie.Users.model.User;
 import com.example.loopie.Users.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -21,14 +20,11 @@ public class AuthController {
 
     private final AuthenticationManager authenticationManager;
     private final UserService userService;
-    private final JwtUtils jwtUtils;
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody User request) {
         User savedUser = userService.createUser(request);
-        return ResponseEntity.ok(AuthenticationResponse.builder()
-                .user(savedUser)
-                .build());
+        return ResponseEntity.ok(new AuthenticationResponse(savedUser));
     }
 
     @PostMapping("/login")
@@ -41,9 +37,7 @@ public class AuthController {
         );
         UserDetails user = userService.loadUserByUsername(request.getUsername());
         User userEntity = (User) user;
-        return ResponseEntity.ok(AuthenticationResponse.builder()
-                .user(userEntity)
-                .build());
+        return ResponseEntity.ok(new AuthenticationResponse(userEntity));
     }
 
     @GetMapping("/me")

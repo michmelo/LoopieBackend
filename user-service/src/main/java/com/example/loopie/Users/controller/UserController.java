@@ -31,9 +31,9 @@ public class UserController {
                 .collect(Collectors.toList());
     }
 
-    @GetMapping("/{id}")
-    public UserResponseDTO getUserById(@PathVariable int id) {
-        return mapToDTO(service.getUserById(id));
+    @GetMapping("/{idUsuario}")
+    public UserResponseDTO getUserById(@PathVariable long idUsuario) {
+        return mapToDTO(service.getUserById(idUsuario));
     }
 
     @PostMapping
@@ -43,14 +43,14 @@ public class UserController {
 
 
 
-    @PutMapping("/{id}")
-    public ResponseEntity<UserResponseDTO> updateUser(@PathVariable int id, @RequestBody User user) {
-        return ResponseEntity.ok(mapToDTO(service.updateUser(id, user)));
+    @PutMapping("/{idUsuario}")
+    public ResponseEntity<UserResponseDTO> updateUser(@PathVariable long idUsuario, @RequestBody User user) {
+        return ResponseEntity.ok(mapToDTO(service.updateUser(idUsuario, user)));
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable int id) {
-        service.deleteUser(id);
+    @DeleteMapping("/{idUsuario}")
+    public ResponseEntity<Void> deleteUser(@PathVariable long idUsuario) {
+        service.deleteUser(idUsuario);
         return ResponseEntity.noContent().build();
     }
 
@@ -58,7 +58,7 @@ public class UserController {
     
     private UserResponseDTO mapToDTO(User user) {
         return UserResponseDTO.builder()
-                .id(user.getId())
+                .idUsuario(user.getIdUsuario())
                 .username(user.getUsername())
                 .email(user.getEmail())
                 .nombre(user.getNombre())

@@ -26,8 +26,8 @@ public class UserService implements UserDetailsService {
         return repository.findAll();
     }
 
-    public User getUserById(int id) {
-        return repository.findById(id)
+    public User getUserById(long idUsuario) {
+        return repository.findById(idUsuario)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
     }
 
@@ -36,8 +36,8 @@ public class UserService implements UserDetailsService {
         return repository.save(user);
     }
 
-    public User updateUser(int id, User user) {
-        User dbUser = getUserById(id);
+    public User updateUser(long idUsuario, User user) {
+        User dbUser = getUserById(idUsuario);
         dbUser.setUsername(user.getUsername());
         dbUser.setEmail(user.getEmail());
         dbUser.setPassword(user.getPassword());
@@ -45,8 +45,8 @@ public class UserService implements UserDetailsService {
         return repository.save(dbUser);
     }
 
-    public void deleteUser(int id) {
-        repository.deleteById(id);
+    public void deleteUser(long idUsuario) {
+        repository.deleteById(idUsuario);
     }
 
     public User saveUser(User u) {

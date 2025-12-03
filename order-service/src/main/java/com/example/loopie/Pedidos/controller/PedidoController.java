@@ -21,7 +21,7 @@ public class PedidoController {
     @PostMapping
     public ResponseEntity<Pedido> createPedido(@RequestBody PedidoRequest request) {
         // TODO: Extraer userId del token JWT.
-        int userId = 1; 
+        Long userId = 1L; 
         
         List<ItemPedido> items = request.getItems().stream().map(itemRequest -> {
             ItemPedido item = new ItemPedido();
@@ -33,13 +33,13 @@ public class PedidoController {
         return ResponseEntity.ok(pedidoService.createPedido(userId, items));
     }
 
-    @GetMapping("/user/{userId}")
-    public ResponseEntity<List<Pedido>> getPedidosByUserId(@PathVariable int userId) {
-        return ResponseEntity.ok(pedidoService.getPedidosByUserId(userId));
+    @GetMapping("/user/{idUsuario}")
+    public ResponseEntity<List<Pedido>> getPedidosByUserId(@PathVariable Long idUsuario) {
+        return ResponseEntity.ok(pedidoService.getPedidosByUserId(idUsuario));
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Pedido> getPedidoById(@PathVariable int id) {
-        return ResponseEntity.ok(pedidoService.getPedidoById(id));
+    @GetMapping("/{idPedido}")
+    public ResponseEntity<Pedido> getPedidoById(@PathVariable Long idPedido) {
+        return ResponseEntity.ok(pedidoService.getPedidoById(idPedido));
     }
 }

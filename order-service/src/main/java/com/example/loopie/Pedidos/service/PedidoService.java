@@ -23,7 +23,7 @@ public class PedidoService {
     private final ProductClient productClient;
 
     @Transactional
-    public Pedido createPedido(int userId, List<ItemPedido> items) {
+    public Pedido createPedido(Long userId, List<ItemPedido> items) {
         // Validar usuario vía Feign
         UserDTO user = userClient.getUserById(userId);
         if (user == null) {
@@ -31,7 +31,7 @@ public class PedidoService {
         }
 
         Pedido pedido = new Pedido();
-        pedido.setUserId(userId);
+        pedido.setIdUsuario(userId);
         pedido.setFechaPedido(LocalDateTime.now());
         pedido.setStatusPedido("PENDIENTE");
 
@@ -57,11 +57,11 @@ public class PedidoService {
         return pedidoRepository.findAll();
     }
 
-    public Pedido getPedidoById(int id) {
+    public Pedido getPedidoById(Long id) {
         return pedidoRepository.findById(id).orElseThrow(() -> new RuntimeException("Pedido no encontrado"));
     }
     
-    public List<Pedido> getPedidosByUserId(int userId) {
-        return pedidoRepository.findByUserId(userId);
+    public List<Pedido> getPedidosByUserId(Long userId) {
+        return pedidoRepository.findByIdUsuario(userId);
     }
 }

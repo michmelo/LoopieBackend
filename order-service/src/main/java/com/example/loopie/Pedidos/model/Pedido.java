@@ -16,10 +16,11 @@ import java.util.List;
 public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idPedido;
+    @Column(name = "id")
+    private Long idPedido;
 
     @Column(name = "user_id")
-    private int userId;
+    private Long idUsuario;
 
     @OneToMany(mappedBy = "pedidoItem", cascade = CascadeType.ALL)
     private List<ItemPedido> items;

@@ -23,7 +23,8 @@ public class User implements UserDetails {
     
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private long idUsuario;
 
     @Column(name = "username")
     @NotBlank(message = "El nombre de usuario no puede estar vacío")

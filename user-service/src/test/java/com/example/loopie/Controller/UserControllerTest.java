@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 import com.example.loopie.Users.service.UserService;
 import com.example.loopie.Users.controller.UserController;
-import com.example.loopie.Users.dto.User;
+import com.example.loopie.Users.model.User;
 
 import static org.mockito.Mockito.when;
 import static org.mockito.ArgumentMatchers.any;

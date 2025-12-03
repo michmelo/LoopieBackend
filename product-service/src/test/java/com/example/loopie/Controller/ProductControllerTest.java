@@ -66,7 +66,7 @@ public class ProductControllerTest {
     public void testSaveProduct()throws Exception {
         Product product = new Product(1, "Chaqueta Vintage", "Chaqueta de cuero estilo vintage, forro interior acolchado", 129.99, "Abrigo", 12, "https://cdn.example.com/products/chaqueta_vintage.jpg", true, 99.99, "VintageStore", "L", "vintage,cuero,otoño", true);
 
-        when(servicio.saveProduct(any(Product.class))).thenReturn(product);
+        when(servicio.createProduct(any(Product.class))).thenReturn(product);
 
         mockMvc.perform(post("/api/v1/products/add")
                 .contentType("application/json")

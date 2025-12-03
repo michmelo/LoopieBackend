@@ -26,7 +26,7 @@ public class UserService implements UserDetailsService {
         return repository.findAll();
     }
 
-    public User getUserById(int id) {
+    public User getUserById(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
     }
@@ -36,7 +36,7 @@ public class UserService implements UserDetailsService {
         return repository.save(user);
     }
 
-    public User updateUser(int id, User user) {
+    public User updateUser(Long id, User user) {
         User dbUser = getUserById(id);
         dbUser.setUsername(user.getUsername());
         dbUser.setEmail(user.getEmail());
@@ -45,7 +45,7 @@ public class UserService implements UserDetailsService {
         return repository.save(dbUser);
     }
 
-    public void deleteUser(int id) {
+    public void deleteUser(Long id) {
         repository.deleteById(id);
     }
 

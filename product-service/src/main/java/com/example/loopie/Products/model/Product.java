@@ -18,7 +18,8 @@ import lombok.NoArgsConstructor;
 public class Product {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id")
+    private long idProducto;
 
     @Column(name = "nombre")
     @NotBlank(message = "El nombre no puede estar vacío")
