@@ -1,0 +1,227 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:user-service >----------------------
+[INFO] Building user-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ user-service ---
+[INFO] Deleting C:\Users\mmelo\Desktop\LoopieBackend\LoopieBackend\user-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ user-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ user-service ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ user-service ---
+[INFO] skip non existing resourceDirectory C:\Users\mmelo\Desktop\LoopieBackend\LoopieBackend\user-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ user-service ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [debug release 17] to target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[5,63] package org.springframework.boot.test.autoconfigure.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[6,44] package org.springframework.test.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[7,50] package org.springframework.boot.test.mock.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[12,36] cannot find symbol
+  symbol:   class User
+  location: package com.example.loopie.Users.dto
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[14,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[15,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[16,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[16,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[17,59] package org.springframework.test.web.servlet.request does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[18,58] package org.springframework.test.web.servlet.result does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[20,2] cannot find symbol
+  symbol: class WebMvcTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[24,13] cannot find symbol
+  symbol:   class MockMvc
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[4,45] package org.springframework.boot.test.context does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[6,2] cannot find symbol
+  symbol: class SpringBootTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[5,63] package org.springframework.boot.test.autoconfigure.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[6,44] package org.springframework.test.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[7,50] package org.springframework.boot.test.mock.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[9,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[9,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[11,46] package com.example.loopie.Products.controller does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[12,41] package com.example.loopie.Products.model does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[13,43] package com.example.loopie.Products.service does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[15,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[16,59] package org.springframework.test.web.servlet.request does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[17,58] package org.springframework.test.web.servlet.result does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[19,2] cannot find symbol
+  symbol: class WebMvcTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[23,13] cannot find symbol
+  symbol:   class MockMvc
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[26,13] cannot find symbol
+  symbol:   class ProductService
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[26,6] cannot find symbol
+  symbol:   class MockBean
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[29,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[42,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[53,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[66,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[72,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[85,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[9,10] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.LoopieApplicationTests
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[19,27] cannot find symbol
+  symbol: class ProductController
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[25,6] cannot find symbol
+  symbol:   class MockBean
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[28,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[41,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[52,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[65,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[78,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[91,6] cannot find symbol
+  symbol:   class Test
+  location: class com.example.loopie.Controller.ProductControllerTest
+[INFO] 50 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.149 s
+[INFO] Finished at: 2025-12-03T13:56:32-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project user-service: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[5,63] package org.springframework.boot.test.autoconfigure.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[6,44] package org.springframework.test.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[7,50] package org.springframework.boot.test.mock.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[12,36] cannot find symbol
+[ERROR]   symbol:   class User
+[ERROR]   location: package com.example.loopie.Users.dto
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[14,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[14,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[15,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[16,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[16,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[17,59] package org.springframework.test.web.servlet.request does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[18,58] package org.springframework.test.web.servlet.result does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[20,2] cannot find symbol
+[ERROR]   symbol: class WebMvcTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[24,13] cannot find symbol
+[ERROR]   symbol:   class MockMvc
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[4,45] package org.springframework.boot.test.context does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[6,2] cannot find symbol
+[ERROR]   symbol: class SpringBootTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[3,29] package org.junit.jupiter.api does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[5,63] package org.springframework.boot.test.autoconfigure.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[6,44] package org.springframework.test.web.servlet does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[7,50] package org.springframework.boot.test.mock.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[9,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[9,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[11,46] package com.example.loopie.Products.controller does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[12,41] package com.example.loopie.Products.model does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[13,43] package com.example.loopie.Products.service does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[15,26] package org.mockito does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[15,1] static import only from classes and interfaces
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[16,59] package org.springframework.test.web.servlet.request does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[17,58] package org.springframework.test.web.servlet.result does not exist
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[19,2] cannot find symbol
+[ERROR]   symbol: class WebMvcTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[23,13] cannot find symbol
+[ERROR]   symbol:   class MockMvc
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[26,13] cannot find symbol
+[ERROR]   symbol:   class ProductService
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[26,6] cannot find symbol
+[ERROR]   symbol:   class MockBean
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[29,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[42,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[53,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[66,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[72,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/UserControllerTest.java:[85,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.UserControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/LoopieApplicationTests.java:[9,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.LoopieApplicationTests
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[19,27] cannot find symbol
+[ERROR]   symbol: class ProductController
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[25,6] cannot find symbol
+[ERROR]   symbol:   class MockBean
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[41,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[52,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[65,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[78,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] /C:/Users/mmelo/Desktop/LoopieBackend/LoopieBackend/user-service/src/test/java/com/example/loopie/Controller/ProductControllerTest.java:[91,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class com.example.loopie.Controller.ProductControllerTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
