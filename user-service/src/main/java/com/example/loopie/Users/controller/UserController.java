@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import com.example.loopie.Users.model.User;
 import com.example.loopie.Users.dto.UserResponseDTO;
-import com.example.loopie.Users.model.User;
 import com.example.loopie.Users.service.UserService;
 
 import lombok.RequiredArgsConstructor;

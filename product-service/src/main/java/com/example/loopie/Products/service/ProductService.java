@@ -6,11 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.loopie.Products.model.Product;
 import com.example.loopie.Products.repository.ProductRepository;
-import lombok.RequiredArgsConstructor;
 
 @Service
-@RequiredArgsConstructor
-
 public class ProductService {
     
     @Autowired

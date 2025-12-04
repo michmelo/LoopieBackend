@@ -23,6 +23,7 @@ public class AuthController {
         this.userService = userService;
     }
 
+    // LOGIN
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
 
@@ -39,6 +40,19 @@ public class AuthController {
         return ResponseEntity.ok(new AuthenticationResponse(userEntity));
     }
 
+    // REGISTRO
+    @PostMapping("/register")
+    public ResponseEntity<AuthenticationResponse> register(@RequestBody User user) {
+
+        // Guarda el usuario nuevo con password encriptada (BCrypt)
+        User savedUser = userService.saveUser(user);
+
+        AuthenticationResponse response = new AuthenticationResponse(savedUser);
+
+        return ResponseEntity.ok(response);
+    }
+
+    // USUARIO ACTUAL
     @GetMapping("/me")
     public ResponseEntity<User> getCurrentUser() {
         Object principal = SecurityContextHolder

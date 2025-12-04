@@ -7,7 +7,7 @@ import com.example.loopie.Pedidos.dto.UserDTO;
 import com.example.loopie.Pedidos.model.ItemPedido;
 import com.example.loopie.Pedidos.model.Pedido;
 import com.example.loopie.Pedidos.repository.PedidoRepository;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,12 +15,16 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class PedidoService {
 
-    private final PedidoRepository pedidoRepository;
-    private final UserClient userClient;
-    private final ProductClient productClient;
+    @Autowired
+    private PedidoRepository pedidoRepository;
+
+    @Autowired
+    private UserClient userClient;
+
+    @Autowired
+    private ProductClient productClient;
 
     @Transactional
     public Pedido createPedido(Long userId, List<ItemPedido> items) {
@@ -58,9 +62,10 @@ public class PedidoService {
     }
 
     public Pedido getPedidoById(Long id) {
-        return pedidoRepository.findById(id).orElseThrow(() -> new RuntimeException("Pedido no encontrado"));
+        return pedidoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Pedido no encontrado"));
     }
-    
+
     public List<Pedido> getPedidosByUserId(Long userId) {
         return pedidoRepository.findByIdUsuario(userId);
     }
